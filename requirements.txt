@@ -1,0 +1,165 @@
+# ── AI Meeting / Video Assistant ── requirements.txt ─────────────────────────
+
+# Python >= 3.10 recommended
+
+# ── Audio / Video acquisition ─────────────────────────────────────────────────
+
+# Download audio/video from YouTube URLs
+
+yt-dlp>=2024.4.9
+
+# Audio file manipulation and format conversion
+
+pydub>=0.25.1
+
+# Python bindings for FFmpeg
+
+# NOTE: FFmpeg binary must be installed separately
+
+ffmpeg-python>=0.2.0
+
+# ── Speech-to-Text (local Whisper) ────────────────────────────────────────────
+
+# OpenAI Whisper for converting video/audio speech into text
+
+openai-whisper>=20231117
+
+# PyTorch backend required by Whisper
+
+torch>=2.2.0
+
+# Audio utilities for PyTorch
+
+torchaudio>=2.2.0
+
+# ── Translation (Hindi → English) ─────────────────────────────────────────────
+
+# Translate Hindi transcripts into English
+
+deep-translator>=1.11.4
+
+# ── LLM Orchestration — LangChain LCEL + Mistral ─────────────────────────────
+
+# Main LangChain framework
+
+langchain
+
+# LangChain core components, messages, prompts and LCEL
+
+langchain-core
+
+# Community integrations and document loaders
+
+langchain-community
+
+# Text splitting for RAG documents/transcripts
+
+langchain-text-splitters
+
+# LangChain wrapper for Mistral API
+
+langchain-mistralai
+
+# Official Mistral Python client
+
+mistralai
+
+# ── RAG Pipeline ──────────────────────────────────────────────────────────────
+
+# Chroma local vector database
+
+chromadb
+
+# LangChain integration with Chroma
+
+langchain-chroma
+
+# Sentence Transformer embedding models
+
+sentence-transformers
+
+# LangChain ↔ HuggingFace embeddings integration
+
+langchain-huggingface
+
+# HuggingFace model downloading and authentication
+
+huggingface-hub
+
+# Tokenization / token counting
+
+tiktoken
+
+# ── PDF & Document Processing ─────────────────────────────────────────────────
+
+# Read and process PDF documents for RAG
+
+pypdf
+
+# Advanced PDF processing
+
+pymupdf
+
+# ── FastAPI Backend ───────────────────────────────────────────────────────────
+
+# FastAPI framework for creating backend APIs
+
+fastapi
+
+# ASGI server used to run FastAPI
+
+uvicorn[standard]
+
+# Required for handling uploaded video/audio/files
+
+python-multipart
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+
+# Streamlit frontend
+
+streamlit
+
+# Additional Streamlit widgets and utilities
+
+streamlit-extras
+
+# File-change watcher for Streamlit development
+
+watchdog
+
+# ── PDF & TXT Export ──────────────────────────────────────────────────────────
+
+# Generate PDF reports
+
+reportlab
+
+# Lightweight PDF generation
+
+fpdf2
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+
+# Load environment variables from .env
+
+python-dotenv
+
+# Numerical operations
+
+numpy
+
+# Progress bars
+
+tqdm
+
+# HTTP requests
+
+requests
+
+# Async HTTP client
+
+httpx
+
+# Async file handling
+
+aiofiles
