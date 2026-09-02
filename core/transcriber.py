@@ -8,7 +8,7 @@ from pydub import AudioSegment
 SARVAM_PIECE_SECONDS = 25
 
 
-WHISPER_MODEL = os.getenv("WHISPER_MODEL", "small")
+WHISPER_MODEL = os.getenv("WHISPER_MODEL", "tiny")
 
 
 SARVAM_API_KEY = os.getenv("SARVAM_API_KEY")
