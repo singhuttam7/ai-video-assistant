@@ -11,7 +11,7 @@ yt-dlp>=2024.4.9
 # Audio file manipulation and format conversion
 
 pydub>=0.25.1
-pyaudioop
+
 
 # Python bindings for FFmpeg
 
